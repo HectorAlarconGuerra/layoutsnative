@@ -4,7 +4,7 @@ import {View, StyleSheet, Image, Text, ScrollView} from 'react-native';
 const App = () => {
   return (
     <>
-      <View>
+      <ScrollView>
         <View style={{flexDirection: 'row'}}>
           <Image
             style={styles.banner}
@@ -51,7 +51,7 @@ const App = () => {
           </ScrollView>
         </View>
 
-      </View>
+      </ScrollView>
     </>
   );
 };
