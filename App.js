@@ -12,45 +12,40 @@ const App = () => {
           />
         </View>
         <View style={styles.contenedor}>
-          <Text style={styles.titulo}>
-            Qué hacer en París
-          </Text>
-          <ScrollView
-            horizontal={true}
-          >
+          <Text style={styles.titulo}>Qué hacer en París</Text>
+          <ScrollView horizontal={true}>
             <View>
               <Image
-              style={styles.banner}
-              source={require('./assets/img/actividad1.jpg')}
+                style={styles.ciudad}
+                source={require('./assets/img/actividad1.jpg')}
               />
-              </View>
+            </View>
             <View>
               <Image
-              style={styles.banner}
-              source={require('./assets/img/actividad2.jpg')}
-                />
-              </View>
-            <View>
-              <Image
-              style={styles.banner}
-              source={require('./assets/img/actividad3.jpg')}
+                style={styles.ciudad}
+                source={require('./assets/img/actividad2.jpg')}
               />
-              </View>
+            </View>
             <View>
               <Image
-              style={styles.banner}
-              source={require('./assets/img/actividad4.jpg')}
+                style={styles.ciudad}
+                source={require('./assets/img/actividad3.jpg')}
               />
-              </View>
+            </View>
             <View>
               <Image
-              style={styles.banner}
-              source={require('./assets/img/actividad5.jpg')}
+                style={styles.ciudad}
+                source={require('./assets/img/actividad4.jpg')}
               />
-              </View>
+            </View>
+            <View>
+              <Image
+                style={styles.ciudad}
+                source={require('./assets/img/actividad5.jpg')}
+              />
+            </View>
           </ScrollView>
         </View>
-
       </ScrollView>
     </>
   );
@@ -64,11 +59,16 @@ const styles = StyleSheet.create({
   titulo: {
     fontWeight: 'bold',
     fontSize: 24,
-    marginVertical: 20
+    marginVertical: 20,
   },
   contenedor: {
-    marginHorizontal: 10
-  }
+    marginHorizontal: 10,
+  },
+  ciudad: {
+    width: 250,
+    height: 300,
+    marginRight: 10,
+  },
 });
 
 export default App;
